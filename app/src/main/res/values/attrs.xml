@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr type="id" name="tag_first" />
+    <attr type="id" name="tag_second" />
+
+
+    <attr name="light_color" format="reference"></attr>
+    <attr name="pure_color" format="reference"></attr>
+
+</resources>

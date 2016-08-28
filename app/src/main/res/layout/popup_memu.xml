@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ork"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_setting"
+        style="@style/PopupStyle"
+        android:text="设置" />
+
+    <TextView
+        android:id="@+id/tv_share"
+        style="@style/PopupStyle"
+        android:text="分享" />
+
+    <TextView
+        android:id="@+id/tv_style"
+        style="@style/PopupStyle"
+        android:text="主题" />
+    <TextView
+        android:id="@+id/tv_update"
+        style="@style/PopupStyle"
+        android:text="更新" />
+    <TextView
+        android:id="@+id/tv_exit"
+        style="@style/PopupStyle"
+        android:text="退出" />
+
+
+</LinearLayout>

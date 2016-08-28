@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="?attr/pure_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/go_back_bt"
+        android:layout_width="30dp"
+        android:layout_height="25dp" />
+    <EditText
+
+        android:id="@+id/et_search"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/et_title_bar_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/et_bg"
+        android:hint="快速搜索"
+        android:textColorHint="?attr/light_color" />
+
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/search_3"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/et_search"
+        android:layout_alignEnd="@+id/et_search" />
+</RelativeLayout>

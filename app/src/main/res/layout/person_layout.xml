@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/edit_text"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/person"
+            android:id="@+id/imageView2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书法大师"
+            android:textSize="16sp"
+            android:textColor="?attr/light_color"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2" />
+    </RelativeLayout>
+
+
+    <!--实现listView横向滑动-->
+    <com.chinabrushwriting.lee.ui.view.MyHorizontalScrollView
+        android:id="@+id/hs_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="2sp">
+
+        <LinearLayout
+            android:id="@+id/ll_show_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </com.chinabrushwriting.lee.ui.view.MyHorizontalScrollView>
+
+
+</LinearLayout>

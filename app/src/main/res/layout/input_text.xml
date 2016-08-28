@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/pure_color"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_bg">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/btn_find"
+            android:background="@null"
+            android:hint="输入文字查询"
+            android:padding="5dp"
+            android:textColorHint="?attr/light_color"
+            android:textCursorDrawable="@android:color/white" />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_alignRight="@id/et_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mic"
+            android:id="@+id/btn_speak"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_3"
+            android:clickable="true"
+            android:focusable="true" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_more"
+        android:textColor="?attr/light_color"
+        android:textSize="12sp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/btn_bg"
+        android:text="更多" />
+
+</LinearLayout>

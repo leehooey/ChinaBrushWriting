@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layer层将两张图片叠加在一起-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!--旋转动画-->
+        <!--pivoX 按照什么位置旋转-->
+        <!--让其中一张图片在单位时间旋转角度大点-->
+        <rotate
+            android:drawable="@drawable/spinner_big_inner"
+            android:fromDegrees="0"
+            android:toDegrees="720"
+            android:pivotX="50%"
+            android:pivotY="50%"></rotate>
+    </item>
+
+    <item>
+        <rotate
+            android:drawable="@drawable/spinner_big_outer"
+            android:fromDegrees="360"
+            android:toDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"></rotate>
+    </item>
+
+</layer-list>

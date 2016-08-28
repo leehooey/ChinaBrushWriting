@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always">
+
+    <com.chinabrushwriting.lee.ui.view.MainInterfaceView
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--标题-->
+        <include layout="@layout/title_bar"></include>
+        <!--输入文字-->
+        <include layout="@layout/input_text"></include>
+        <!--作者布局-->
+        <include layout="@layout/person_layout"></include>
+        <!--显示大师作品-->
+        <com.chinabrushwriting.lee.ui.view.MyViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/edit_text"></com.chinabrushwriting.lee.ui.view.MyViewPager>
+    </com.chinabrushwriting.lee.ui.view.MainInterfaceView>
+    <!--设置前景色为暗色-->
+    <View
+        android:id="@+id/v_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000"></View>
+</FrameLayout>
+

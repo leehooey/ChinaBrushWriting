@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar_et"
+        android:id="@+id/top_bar"></include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_all_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></ListView>
+
+        <com.chinabrushwriting.lee.ui.view.IndexBar
+            android:id="@+id/index_bar"
+            android:layout_width="@dimen/index_bar_width"
+            android:layout_height="match_parent"
+            android:background="?attr/pure_color">
+
+        </com.chinabrushwriting.lee.ui.view.IndexBar>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_show_letter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/style_toast"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@android:color/background_light"
+        android:textSize="50sp"
+        android:visibility="gone"></TextView>
+
+
+</RelativeLayout>

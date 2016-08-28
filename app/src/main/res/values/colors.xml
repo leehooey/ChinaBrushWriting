@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--红色主题-->
+    <color name="red">#B92120</color>
+    <color name="light_red">#99A80F0E</color>
+
+    <!--蓝色主题-->
+    <color name="blue">#0a0d58</color>
+    <color name="light_blue">#363ce9</color>
+
+</resources>
